@@ -1,0 +1,19 @@
+Ecomerce website
+
+     important rules
+
+1.. software arcitecures 
+there are two types 
+1-monolethic..  2-microservice
+
+1-monolethic = there are using only one server and one data base and then a create a full application.
+
+2-microservice = there are using many server and many data base and then a create a full application
+
+
+       Add to card prosess...⬇️
+       #1.. User.js
+       #2..cart.js/route .. esami express,router or export karne ke bad app.js mai require krna hota hai
+       #3..app.use
+       #4..ab nabvar mai /user/card dalna padega
+       #5..

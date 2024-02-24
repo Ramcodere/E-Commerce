@@ -1,0 +1,66 @@
+
+ <%-include('../partials/header')%>
+<%-include('../partials/navbar')%>
+
+<div class="row" style="margin-top: 80px;">
+
+    <div class="col-md-6 mx-auto">
+
+        <div class="card">
+            <div class="card-body">
+
+                <h5 class="card-title text-center">Sign Up</h5>
+                <form action="/register" method="POST">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username: </label>
+                        <input type="text" class="form-control" name="username" id="username" placeholder="Enter your username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email: </label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                        
+
+                    <div class="mb-3">
+                        <p class="mt-2"> Want to register As? </p>
+                        <div>
+                            <label for="role" class="form-label">Buyer: </label>
+                            <input type="radio" class="form-check-input" name="role" id="role" placeholder="role of the user" value="buyer" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="role" class="form-label"> Seller: </label>
+                        <input type="radio" class="form-check-input" name="role" id="role" placeholder="role of the user" value="seller" required>
+                    </div>
+
+
+
+                    <div class="mb-3">
+                        <label for="gender" class="form-label">Gender: </label>
+                        <select class="form-select" name="gender" id="gender" required>
+                            <option value="">Select gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password: </label>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="agree_terms" required>
+                        <label class="form-check-label" for="agree_terms">I agree to the <a href="/terms">terms and conditions</a>.</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+                </form>
+                <div class="text-center mt-3">
+                    <p>Already have an account? <a href="/login">Login here</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%-include('../partials/footer')%>
+
