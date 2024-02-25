@@ -76,6 +76,10 @@ router.get('/products/:id/edit' , isLoggedIn , isSeller , async (req,res)=>{
     }
 })
 
+// router.get("/", (req,res) => {
+//     res.render("Home");
+// });
+
 // route for editing the product so we need form for it
 // router.get('/products/:id/edit', isLoggedIn, isSeller, async (req, res) => {
 //     try {

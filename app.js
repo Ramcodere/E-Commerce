@@ -75,7 +75,7 @@ app.use((req,res,next)=>{
 //Home - Page ....
 
 app.get("/", (req,res) => {
-    res.render("Home");
+    res.render("home");
 });
 
 
