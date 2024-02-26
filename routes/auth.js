@@ -18,11 +18,11 @@ router.post('/register' , async(req,res)=>{
 
 })
 
-router.get('/Login' , (req,res)=>{
+router.get('/login' , (req,res)=>{
     res.render('auth/login');
 })
 
-router.post('/Login',
+router.post('/login',
   passport.authenticate('local',
    { 
      failureRedirect: 'Login', 
