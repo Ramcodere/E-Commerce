@@ -77,5 +77,5 @@ const validateRivew = (req,res,next)=>{
         }
     };
     
-
+     
 module.exports = {validateProduct , validateRivew , isLoggedIn , isSeller ,  isProductAuthor}

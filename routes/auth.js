@@ -19,7 +19,7 @@ router.post('/register' , async(req,res)=>{
 })
 
 router.get('/Login' , (req,res)=>{
-    res.render('auth/Login');
+    res.render('auth/login');
 })
 
 router.post('/Login',
